@@ -1,0 +1,104 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+.titulo {
+    text-align: left;
+    font-weight: bold;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    position: relative;
+}
+
+header img {
+    max-width: 100%;
+}
+.logoimg {
+    clear: both;
+    width: 10%;
+    height: 170px;
+    margin-left: 45%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.conteudo_header {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.detalhe{
+    position: absolute;
+    height: 7px;
+    width: 100%;
+    background: #383F5D;
+}
+.header_nav {
+    position: absolute;
+    height: 40px;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.navbar-custom {
+    height: 85px;
+    background-color: #4CAF50;
+    color: #3498DB;
+    border-radius: 15px;
+    width: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    font-size: 18px;
+}
+
+.detalhe_header {
+    position: relative;
+    height: 10px;
+    width: 2px;
+    background: rgb(134, 134, 134);
+}
+
+/* conteudo */
+
+main {
+    margin-top: 50px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+picture {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: -5px;
+    background-image: url("./IMG/fundo1.png");
+}
+
+p {
+    margin-top: 20px;
+    width: 56.25rem;
+    font-size: 16pt;
+}

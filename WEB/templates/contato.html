@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block header %}
+  <h1>{% block title %}Contato{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+    <p class="titulo">
+    Entre em contato
+    </p> <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Quis rerum dicta et eveniet iure architecto consectetur 
+        voluptate officia temporibus voluptates eaque ipsa culpa 
+        molestias itaque, provident aut totam odio quidem!
+    </p> <br>
+    <hr style="width: 60%;">
+    <p>
+        Seu e-mail: <br>
+        <input type="email" name="email">
+    </p>
+    <p>
+        Assunto: <br>
+        <input type="assunto" name="assunto">
+    </p>
+    <p>
+        Descrição: <br>
+        <textarea name="Descrição" id cols="29" rows="5"></textarea>
+    </p> <p>
+    <input type="submit" value="Enviar">
+    </p>
+{% endblock %}
