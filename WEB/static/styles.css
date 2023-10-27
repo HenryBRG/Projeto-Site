@@ -29,8 +29,8 @@ header img {
 }
 .logoimg {
     clear: both;
-    width: 10%;
-    height: 170px;
+    width: 13%;
+    height: 180px;
     margin-left: 45%;
     margin-top: 1%;
     margin-bottom: 1%;
@@ -52,9 +52,10 @@ header img {
 .header_nav {
     position: absolute;
     height: 40px;
-    width: 70%;
+    width: 90%;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 3;
 }
 .navbar-custom {
     height: 85px;
@@ -64,6 +65,8 @@ header img {
     width: 60%;
     left: 50%;
     transform: translateX(-50%);
+    position: absolute; 
+    z-index: 1;
 }
 
 li {
@@ -110,12 +113,17 @@ p {
 }
 .retangulo {
     margin-top: 50px;
-    width: 22%;
+    width: 22.5%;
     height: 600px;
     background-image: linear-gradient(to bottom, #FF8C00, #cb5e4d);
     border-radius: 40px;
     position: absolute;
     left: 0;
-    margin-left: 6%;
+    margin-left: 4%;
 
+}
+.imagemsticker{
+    position: absolute; 
+    z-index: 1;
+    left: 0;
 }
