@@ -29,8 +29,8 @@ header img {
 }
 .logoimg {
     clear: both;
-    width: 13%;
-    height: 180px;
+    width: 10%;
+    height: auto;
     margin-left: 45%;
     margin-top: 1%;
     margin-bottom: 1%;
@@ -58,8 +58,8 @@ header img {
     z-index: 3;
 }
 .navbar-custom {
-    height: 85px;
-    background-color: #4CAF50;
+    height: 65px;
+    background-color: #FF8C00;
     color: #3498DB;
     border-radius: 15px;
     width: 60%;
@@ -67,8 +67,16 @@ header img {
     transform: translateX(-50%);
     position: absolute; 
     z-index: 1;
+    margin-top: 30px;
 }
-
+.buttoncustom1 {
+    
+    border-color: #FF8C00;
+    color: #FF8C00;
+}
+.buttoncustom1:hover{
+    background-color: #da6349;
+}
 li {
     display: flex;
     align-items: center;
@@ -86,6 +94,11 @@ li {
 .gridContainer {
     display: flex;
     justify-content: space-between;
+}
+.carrosseltest{
+    width: 10%;
+    height: 400px;
+    border-radius: 25px;
 }
 /* conteudo */
 
@@ -124,6 +137,40 @@ p {
 }
 .imagemsticker{
     position: absolute; 
-    z-index: 1;
+    z-index: 2;
+}
+.imagemretangulo1{
+    margin-top: 20px;
+    width: 22.5%;
+    height: 600px;
+    border-radius: 40px;
+    position: absolute;
     left: 0;
+    margin-left: 2.5%;
+}
+.imagemretangulo2{
+    margin-top: 20px;
+    width: 22.5%;
+    height: 600px;
+    border-radius: 40px;
+    position: absolute;
+    right: 0;
+    margin-right: 4.3%;
+}
+.imagemretangulo{
+    position: absolute;
+    left: 34%;
+    margin-top: 400px;
+}
+.imagemretangulo3{
+    position: absolute;
+    width: 60%;
+    height: 80px;
+    margin-top: -70px;
+    left: 26.2%; 
+}
+.imgstickeritem {
+    width: 80%;
+    height: auto;
+    margin-left: 9%;
 }

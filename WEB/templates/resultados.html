@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block header %}
+  <h1>{% block title %}Resultados{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<main>
+<span class="gridContainer">
+    <div class="imagemretangulo3">
+    <img src="{{ url_for('static', filename='/IMG/retanguloaba.png')}}" alt="" style="width: 80%; height: 80px;">
+    <p style="margin-top: -6.3%;margin-left: -10%; text-align: center; font-family: Josefin Sans; font-size: 19pt;">Resultados da Pesquisa para "{{ termo_pesquisa }}"</p>
+    </div>
+</span>
+<span class="gridContainer">
+    <div style="display: flex;">
+        <img src="{{ url_for('static', filename='/IMG/fundoitens.png')}}" alt="" style="width: auto; height: 700px; margin-left:5%; opacity: 0.85; position: relative;">
+        <div class="card" style="width: 15% ;height: 290px; position: absolute; margin-top: 80px; margin-left: 9.3%;">
+            <img src="{{ url_for('static', filename='/IMG/stickerkirara.png')}}" class="imgstickeritem" alt="..." >
+            <div class="card-body">
+              <h5 class="card-title" style=" text-align: center; margin-top: -10%;">Refeição Revigorante Miau</h5>
+              <a href="#" class="btn btn-primary" style="margin-left: 19%;">Ver Receita...</a>
+            </div>
+        </div>
+        <div class="card" style="width: 15% ;height: 290px; position: absolute; margin-top: 80px; margin-left: 9.3%;">
+            <img src="{{ url_for('static', filename='/IMG/stickerkirara.png')}}" class="imgstickeritem" alt="..." >
+            <div class="card-body">
+              <h5 class="card-title" style=" text-align: center; margin-top: -10%; font-family: Josefin Sans">Refeição Revigorante Miau</h5>
+              <a href="#" class="btn btn-primary" style="margin-left: 19%; font-family: Josefin Sans">Ver Receita...</a>
+            </div>
+        </div>
+    </div>
+</span>
+</main>
+{% endblock %}
