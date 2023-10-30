@@ -4,9 +4,21 @@ app = Flask(__name__)
 def home():
     return render_template('home.html')
 
-@app.route('/resultados')
+@app.route('/resultados/')
 def resultados():
     return render_template('resultados.html')
+
+@app.route('/receitas1/')
+def receitas1():
+    return render_template('receitas1.html')
+
+@app.route('/food1/')
+def food1():
+    return render_template('food1.html')
+
+@app.route('/food2/')
+def food2():
+    return render_template('food2.html')
 
 @app.route('/pesquisa', methods=['POST'])
 def pesquisa():

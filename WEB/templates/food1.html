@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% block header %}
+  <h1>{% block title %}Refeição Revigorante Miau{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<main>
+    <span class="container">
+        <div class="retangulo" style="display: flex; position: relative;">
+            <img src="{{ url_for('static', filename='/IMG/fundoitens.png')}}" alt="" style="width: auto; height: 700px; margin-left:5%; opacity: 0.85; position: relative;" class="img-fluid">
+            <img src="{{ url_for('static', filename='/IMG/stickerkirara.png')}}" alt="" class="imgdetalhes">
+            <h2 class="titulo1">
+                Refeição Revigorante Miau
+            </h2>
+            <p class="subtexto">"O prato inclui uma generosa porção de frango grelhado, que é cozido à perfeição para garantir a suculência e o sabor. Acompanhado de arroz cozido no vapor, o Refeição Revigorante Miau proporciona uma base sólida para a aventura, garantindo energia e vitalidade aos viajantes."</p>
+            <h1 class="titulo2">
+            Ingredientes
+            </h1>
+            <ul style="position: absolute;margin-left: 28.9%; margin-top: 200px; list-style-type: circle; width: 25%;" >
+                <li>
+                <p class="textoingredientes">
+                -Peitos de frango (ou tofu para uma versão vegetariana)
+                </li>
+                <li><p class="textoingredientes">
+                -Arroz branco</p>
+                </li>
+                <li><p class="textoingredientes">
+                -Brócolis</p>
+                </li>
+                <li><p class="textoingredientes">
+                -Cenoura</p>
+                </li>
+                <li><p class="textoingredientes">
+                -Ervilhas</p>
+                </li>
+                <li><p class="textoingredientes">
+                -Sal e pimenta a gosto</p>
+                </li>
+                <li><p class="textoingredientes">
+                -Molho de soja</p>
+                </li>
+                <li><p class="textoingredientes">
+                -Alho picado</p>
+                </li>
+                <li><p class="textoingredientes">
+                -Azeite de oliva</p>
+                </li>
+            </ul>
+            <h1 class="titulo2" style="margin-left: 54.1%;">
+            Instruções
+            </h1>
+            <ul style="position: absolute;margin-left: 43.9%; margin-top: 200px; list-style-type: circle; width: 40%;" >
+                <li>
+                <p class="textoingredientes" style="margin-top: -12px;">
+                1. Cozinhe o arroz de acordo com as instruções na embalagem. Reserve.
+                </li>
+                <li><p class="textoingredientes"style="margin-top: -12px;">
+                2. Tempere os peitos de frango com sal, pimenta, alho picado e um pouco de molho de soja.</p>
+                </li>
+                <li><p class="textoingredientes"style="margin-top: -12px;">
+                3. Em uma frigideira, grelhe o frango em azeite de oliva até que esteja cozido por completo.</p>
+                </li>
+                <li><p class="textoingredientes"style="margin-top: -12px;">
+                4. Enquanto o frango grelha, cozinhe o brócolis, a cenoura e as ervilhas no vapor até ficarem macios.</p>
+                </li>
+                <li><p class="textoingredientes"style="margin-top: -12px;">
+                5. Para montar o prato, coloque uma porção de arroz cozido, os legumes no vapor e o frango grelhado por cima.</p>
+                </li>
+                <li><p class="textoingredientes"style="margin-top: -12px;">
+                6. Regue tudo com um pouco mais de molho de soja, se desejar.</p>
+                </li>
+            </ul>
+        </div>
+    </span>
+</main>
+{% endblock %}

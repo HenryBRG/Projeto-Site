@@ -5,14 +5,9 @@
 
 {% block content %}
 <main>
+  
   <span class="container retangulo">
-    <div class="imagemretangulo3">
-    <img src="{{ url_for('static', filename='/IMG/retanguloaba.png')}}" alt="" style="width: 80%; height: 80px;">
-    <p style="margin-top: -7%;margin-left: -15%; text-align: center; font-family: Josefin Sans; font-size: 19pt;">Resultados da Pesquisa para "{{ termo_pesquisa }}"</p>
-    </div>
-  </span>
-  <span class="container retangulo">
-    <div style="display: flex; margin-left: 2%;margin-top: -2%;">
+    <div style="display: flex; margin-left: 2%; margin-top: -60px;">
         <img src="{{ url_for('static', filename='/IMG/fundoitens.png')}}" alt="" style="width: auto; height: 700px; margin-left:5%; opacity: 0.85; position: relative;" class="img-fluid">
         <div class="card text-bg-warning border-success mb-3" style="width: 15% ;height: 270px; position: absolute; margin-top: 90px; margin-left: 11.3%;">
           <img src="{{ url_for('static', filename='/IMG/stickerkirara.png')}}" class="imgstickeritem img-fluid" alt="..." >
@@ -29,12 +24,11 @@
           </div>
         </div>
     </div>
-
   </span>
-<nav aria-label="Page navigation example" style="margin-top: -1%;">
+<nav aria-label="Page navigation example">
     <ul class="pagination">
       <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
-      <li class="page-item"><a class="page-link" href="/receitas1/">1</a></li>
+      <li class="page-item"><a class="page-link" href="/resultados/">1</a></li>
       <li class="page-item"><a class="page-link" href="#">2</a></li>
       <li class="page-item"><a class="page-link" href="">3</a></li>
       <li class="page-item"><a class="page-link" href="#">Próximo</a></li>

@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% block header %}
+  <h1>{% block title %}Home{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<main>
+    <span class="container">
+        <div class="retangulo" style="display: flex; position: relative;">
+            <img src="{{ url_for('static', filename='/IMG/fundoitens.png')}}" alt="" style="width: auto; height: 700px; margin-left:5%; opacity: 0.85; position: relative;" class="img-fluid">
+            <img src="{{ url_for('static', filename='/IMG/stickerbolinhomond.png')}}" alt="" class="imgdetalhes">
+            <h2 class="titulo1">
+                Bolinho de Batatas Reais
+            </h2>
+            <p class="subtexto">"Um bolinho frito de purê de batata. Um pouco de pinha ajuda a dar uma crocância. Pode ser comido com um pouco de geleia. Amado por pessoas de todas as idades."</p>
+            <h1 class="titulo2">
+            Ingredientes
+            </h1>
+            <ul style="position: absolute;margin-left: 28.9%; margin-top: 200px; list-style-type: circle; width: 25%;" >
+                <li>
+                <p class="textoingredientes">
+                -500g de batatas
+                </li>
+                <li><p class="textoingredientes">
+                -1 ovo</p>
+                </li>
+                <li><p class="textoingredientes">
+                -1/2 cebola picada</p>
+                </li>
+                <li><p class="textoingredientes">
+                -2 dentes de alho picados</p>
+                </li>
+                <li><p class="textoingredientes">
+                -1/4 de xícara de farinha de rosca</p>
+                </li>
+                <li><p class="textoingredientes">
+                -1/4 de xícara de queijo parmesão ralado</p>
+                </li>
+                <li><p class="textoingredientes">
+                -Sal e pimenta a gosto</p>
+                </li>
+                <li><p class="textoingredientes">
+                -Óleo vegetal para fritar</p>
+                </li>
+            </ul>
+            <h1 class="titulo2" style="margin-left: 54.1%;">
+            Instruções
+            </h1>
+            <ul style="position: absolute;margin-left: 43.9%; margin-top: 200px; list-style-type: circle; width: 40%;" >
+                <li>
+                <p class="textoingredientes" style="margin-top: -12px;font-size: 10pt;">
+                1. Descasque as batatas, corte-as em pedaços e cozinhe em água fervente até ficarem macias. Escorra bem e amasse as batatas em um recipiente grande.
+                </li>
+                <li><p class="textoingredientes"style="margin-top: -12px;font-size: 10pt;">
+                2. Adicione o ovo, a cebola picada, o alho picado, a farinha de rosca e o queijo parmesão às batatas amassadas. Tempere com sal e pimenta a gosto. Misture bem até obter uma massa homogênea.</p>
+                </li>
+                <li><p class="textoingredientes"style="margin-top: -12px;font-size: 10pt;">
+                3. Modele pequenos bolinhos com as mãos a partir da massa.</p>
+                </li>
+                <li><p class="textoingredientes"style="margin-top: -12px;font-size: 10pt;">
+                4. Aqueça o óleo vegetal em uma panela funda a 180°C.</p>
+                </li>
+                <li><p class="textoingredientes"style="margin-top: -12px;font-size: 10pt;">
+                5. Frite os bolinhos até que fiquem dourados e crocantes. Certifique-se de não lotar a panela para que os bolinhos fritem uniformemente.</p>
+                </li>
+                <li><p class="textoingredientes"style="margin-top: -12px;font-size: 10pt;">
+                6. Retire os bolinhos da panela e coloque-os sobre papel absorvente para remover o excesso de óleo.</p>
+                </li>
+                <li><p class="textoingredientes"style="margin-top: -12px;font-size: 10pt;">
+                7. Sirva quente e aproveite seus bolinhos de batata caseiros!</p>
+                </li>
+            </ul>
+        </div>
+    </span>
+</main>
+{% endblock %}
