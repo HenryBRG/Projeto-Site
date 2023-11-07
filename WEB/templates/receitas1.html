@@ -6,22 +6,24 @@
 {% block content %}
 <main>
   
-  <span class="container retangulo">
+  <span class="container-fluid retangulo">
     <div style="display: flex; margin-left: 2%; margin-top: -60px;">
+      
         <img src="{{ url_for('static', filename='/IMG/fundoitens.png')}}" alt="" style="width: auto; height: 700px; margin-left:5%; opacity: 0.85; position: relative;" class="img-fluid">
+        
         <div class="card text-bg-warning border-success mb-3" style="width: 15% ;height: 270px; position: absolute; margin-top: 90px; margin-left: 11.3%;">
-          <img src="{{ url_for('static', filename='/IMG/stickerkirara.png')}}" class="imgstickeritem img-fluid" alt="..." >
+          <img src="{{ url_for('static', filename='/IMG/stickerkirara.png')}}" class="imgstickeritem" alt="..." >
           <div class="card-body">
             <h5 class="card-title" style=" text-align: center; margin-top: -10%; font-family: Josefin Sans">Refeição Revigorante Miau</h5>
-            <a href="/food1/" class="btn btn-primary" style="margin-left: 14%; font-family: Josefin Sans;background-color: green;">Ver Receita...</a>
+            <a href="/food1/" class="btn btn-primary textosticker">Ver Receita...</a>
           </div>
         </div>
         <div class="card text-bg-warning border-success mb-3" style="width: 15% ;height: 270px; position: absolute; margin-top: 90px; margin-left: 29%;">
           <img src="{{ url_for('static', filename='/IMG/stickerbolinhomond.png')}}" class="imgstickeritem img-fluid" alt="..." >
           <div class="card-body">
             <h5 class="card-title" style=" text-align: center; margin-top: -10%; font-family: Josefin Sans">Bolinho de Batatas Reais</h5>
-            <a href="/food2/" class="btn btn-primary" style="margin-left: 14%; font-family: Josefin Sans; background-color: green;">Ver Receita...</a>
-          </div>
+            <a href="/food2/" class="btn btn-primary textosticker">Ver Receita...</a>
+    </div>
         </div>
     </div>
   </span>

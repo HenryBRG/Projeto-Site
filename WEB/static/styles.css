@@ -3,11 +3,33 @@
     padding: 0px;
     text-decoration: none;
 }
+@media only screen and (max-width: 990px) {
+    .navbar {
+        width: 80px!important;
+        height: auto!important;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 100px !important; /* Largura máxima da imagem */
+        height: auto !important;
+    }
+    .textosticker {
+        width: 100px !important; /* Largura máxima da imagem */
+        height: auto !important;
+    }
+}
+
+.teste{
+    width: auto;
+}
 
 .titulo {
     text-align: left;
     font-weight: bold;
 }
+
+
 
 body {
     background-image: url(IMG/backgroundhome.jpg);
@@ -208,4 +230,9 @@ p {
     font-size: 12pt;
     margin-left: 35%;
     width: 100%;
+}
+.textosticker{
+    margin-left: 14%;
+    font-family: Josefin Sans;
+    background-color: green;
 }
