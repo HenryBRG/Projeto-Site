@@ -19,8 +19,11 @@
     <header>
       <div class="detalhe"></div>
         <span class="header_nav" style="opacity: 0.85;font-family: Josefin Sans">
-    
-        <img src="{{ url_for('static', filename='/IMG/logo.png')}}" class="logoimg ">
+
+        <div class="d-flex align-items-center justify-content-center">
+        <img src="{{ url_for('static', filename='/IMG/logo.png')}}" class="logoimg  ">
+        </div>
+
         
         <nav class="navbar navbar-expand-lg navbar-custom bg-body-tertiary border-bottom border-body" data-bs-theme="dark">
             <div class="container-fluid">
@@ -34,10 +37,10 @@
                   </li>
                   
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
                       Receitas
                     </a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                       <li><a class="dropdown-item" href="/receitas1/">Ver Todas as Receitas</a></li>
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" href="/food1/">Refeição Revigorante Miau</a></li>
@@ -48,9 +51,9 @@
                     <a class="nav-link disabled" aria-disabled="true"></a>
                   </li>
                 </ul>
-                <form class="d-flex" role="search" method="post" action="/pesquisa">
-                  <input class="form-control me-2" name="termo_pesquisa" type="search" placeholder="Ex: Frango com Mel" aria-label="Search">
-                  <button class="btn btn-outline-success " type="submit">Pesquisar</button>
+                <form class="d-flex d-none ml-2 d-lg-block" role="search" method="post" action="/pesquisa">
+                  <input class="form-control mr-sm-2" name="termo_pesquisa" type="search" placeholder="Ex: Frango com Mel" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0 " type="submit">Pesquisar</button>
                 </form>
               </div>
        

@@ -8,21 +8,46 @@
         width: 80px!important;
         height: auto!important;
     }
+    .nav-item {
+        width: 10px !important;
+    }
+    .divreceitas {
+        display: flex !important;
+        margin-left: 15.5% !important;
+        margin-top: -90px !important
+    }
+
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1400px) {
+    .fundoitens {
+        width: 900px !important;
+        height: 900px !important;
+        margin: 0 !important;
+    }
+
+
+
+}
+@media only screen and (max-width: 1000px) {
     .card {
-        width: 100px !important; /* Largura máxima da imagem */
+        width: 200px !important; /* Largura máxima da imagem */
         height: auto !important;
     }
     .textosticker {
         width: 100px !important; /* Largura máxima da imagem */
         height: auto !important;
+        margin:  !important; 
     }
 }
 
-.teste{
+.fundoitens {
     width: auto;
+    height: 700px;
+    margin-left:5%;
+    opacity: 0.85;
+    position: relative;
 }
+
 
 .titulo {
     text-align: left;
@@ -50,9 +75,8 @@ header img {
     max-width: 100%;
 }
 .logoimg {
-    width: 10%;
+    width: 110px;
     height: auto;
-    margin-left: 45%;
     margin-top: 1%;
     margin-bottom: 1%;
 }
@@ -79,7 +103,7 @@ header img {
     z-index: 3;
 }
 .navbar-custom {
-    height: 65px;
+    height: 95px;
     background-color: #FF8C00;
     color: #3498DB;
     border-radius: 15px;
@@ -232,7 +256,12 @@ p {
     width: 100%;
 }
 .textosticker{
-    margin-left: 14%;
+    margin-left: 20%;
     font-family: Josefin Sans;
     background-color: green;
+}
+.divreceitas {
+    margin-top: 0px;
+    display: flex;
+    margin-left: 15.5%;
 }
