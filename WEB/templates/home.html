@@ -5,56 +5,62 @@
 
 {% block content %}
 <main>
-<span class="container d-flex justify-content-center">
-
-
-    <div class="retangulo " style="display: flex; align-items: flex-start; position: relative;">
-      <img src="{{ url_for('static', filename='/IMG/stickerxiang.png')}}" class="imagemsticker" style="width: 180px; margin-top: -90px; margin-left: -168px; ">
-        <div class="imagemretangulo1" style=" opacity: 0.90; z-index: 1; margin-left: -406px; ">
-          <img src="{{ url_for('static', filename='/IMG/Retangulo1.png')}}" alt="" >
-        <p class="" style="width: 90%; margin-top: 60px; margin-left: 30px; position: absolute; top: 0; font-family: Josefin Sans; font-size: 17pt; width: 270px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae distinctio id molestias odit iure, pariatur optio voluptatem corporis dolorem doloribus nisi aut alias dignissimos reiciendis corrupti sequi architecto eos? Id!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  <span class="container">
+    <div class="row ">
+      <div class="col-md-4 ">
+        <div class="retangulo" >
+          <img src="{{ url_for('static', filename='/IMG/stickerxiang.png')}}" class="imagemsticker" style="width: 180px; margin-top: -120px; margin-left: 205px;">
+          <div class="imagemretangulo1" style="opacity: 0.90; z-index: 1;">
+            <img src="{{ url_for('static', filename='/IMG/Retangulo1.png')}}" alt="">
+            <p class="" style="width: 90%; margin-top: 60px; margin-left: 30px; position: absolute; top: 0; font-family: Josefin Sans; font-size: 17pt; width: 270px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae distinctio id molestias odit iure, pariatur optio voluptatem corporis dolorem doloribus nisi aut alias dignissimos reiciendis corrupti sequi architecto eos? Id!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
         </div>
+      </div>
+
+      <div class="col-md-4 ">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-custom">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="{{ url_for('static', filename='/IMG/realfood1.png')}}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="{{ url_for('static', filename='/IMG/kirarafoodreal.png')}}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="{{ url_for('static', filename='/IMG/hypotasisfood.png')}}" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="retangulo ">
+          <img src="{{ url_for('static', filename='/IMG/stickerventi.png')}}" class="imagemsticker" style="width: 180px; margin-top: -120px;">
+          <div class="imagemretangulo1" style="opacity: 0.90; z-index: 1;">
+            <img src="{{ url_for('static', filename='/IMG/Retangulo1.png')}}" alt="">
+            <p class="" style="width: 90%; margin-top: 60px; margin-left: 30px; position: absolute; top: 0; font-family: Josefin Sans; font-size: 17pt; width: 270px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae distinctio id molestias odit iure, pariatur optio voluptatem corporis dolorem doloribus nisi aut alias dignissimos reiciendis corrupti sequi architecto eos? Id!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
     </div>
+  </span>
 
-      <div id="carouselExampleIndicators" class="carousel slide carros" style="width: 50%; ;">
-        <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="2000">
-        <img src="{{ url_for('static', filename='/IMG/realfood1.png')}}" class="d-block w-100 carrosseltest" alt="..."  >
-      </div>
-      <div class="carousel-item" data-bs-interval="2000">
-        <img src="{{ url_for('static', filename='/IMG/kirarafoodreal.png')}}" class="d-block w-100 carrosseltest " alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="{{ url_for('static', filename='/IMG/hypotasisfood.png')}}" class="d-block w-100 carrosseltest " alt="...">
-      </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-      </button>
-      </div>
 
-      <div class="retangulo " style="display: flex; align-items: flex-start; position: relative; margin-left: 50px;">
-          <img src="{{ url_for('static', filename='/IMG/stickerventi.png')}}" class="imagemsticker" style="width: 180px; margin-top: -90px; margin-left: -45px;">
-        <div class="imagemretangulo2" style=" opacity: 0.90; ">
-          <img src="{{ url_for('static', filename='/IMG/Retangulo1.png')}}" alt="" >
-            <p style="width: 300px; margin-top: 67px; margin-left: 30px; position: absolute; top: 0;font-family: Josefin Sans; font-size: 17pt;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae distinctio id molestias odit iure, pariatur optio voluptatem corporis dolorem doloribus nisi aut alias dignissimos reiciendis corrupti sequi architecto eos? Id!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illo placeat iusto dolorum beatae qui? Veritatis dignissimos voluptate.</p>
-        </div>
-      </div>
 
-</span>
-<div class="imagemretangulo" style="left: 36.5%;">
-<img src="{{ url_for('static', filename='/IMG/retanguloaba.png')}}" alt="" style="width: 70%; height: 80px;">
-<p style="position: absolute; top: 0; margin-left: 15%; margin-top: 3.7%;font-family: Josefin Sans; font-size: 17pt;">Culinária dos Sete Reinos</p>
-</div>
+
+
 </main>
 {% endblock %}

@@ -6,20 +6,20 @@
 {% block content %}
 <main>
   
-  <span class="container-fluid retangulo" >
+  <span class="container-fluid " >
     <div class="divreceitas">
        
         
-      <div class="row">
+      <div class="row flex-row gridContainer" >
         <div class="col-md-6">
-        <div class="card text-bg-warning border-success mb-3" >
+        <div class="card text-bg-warning border-success mb-3 card-custom" >
           <img src="{{ url_for('static', filename='/IMG/stickerkirara.png')}}" class="imgstickeritem" alt="..." >
           <div class="card-body">
             <h5 class="card-title" style=" text-align: center; margin-top: -10%; font-family: Josefin Sans">Refeição Revigorante Miau</h5>
             <a href="/food1/" class="btn btn-primary textosticker">Ver Receita...</a>
           </div>
         </div>
-        <div class="card text-bg-warning border-success mb-3" >
+        <div class="card text-bg-warning border-success mb-3 card-custom" >
           <img src="{{ url_for('static', filename='/IMG/stickerbolinhomond.png')}}" class="imgstickeritem img-fluid" alt="..." >
           <div class="card-body">
             <h5 class="card-title" style=" text-align: center; margin-top: -10%; font-family: Josefin Sans">Bolinho de Batatas Reais</h5>
@@ -27,10 +27,26 @@
           </div>
           </div>
     </div>
+    <div class="col-md-6">
+      <div class="card text-bg-warning border-success mb-3 card-custom" >
+        <img src="{{ url_for('static', filename='/IMG/stickerkirara.png')}}" class="imgstickeritem" alt="..." >
+        <div class="card-body">
+          <h5 class="card-title" style=" text-align: center; margin-top: -10%; font-family: Josefin Sans">Refeição Revigorante Miau</h5>
+          <a href="/food1/" class="btn btn-primary textosticker">Ver Receita...</a>
+        </div>
+      </div>
+      <div class="card text-bg-warning border-success mb-3 card-custom" >
+        <img src="{{ url_for('static', filename='/IMG/stickerbolinhomond.png')}}" class="imgstickeritem img-fluid" alt="..." >
+        <div class="card-body">
+          <h5 class="card-title" style=" text-align: center; margin-top: -10%; font-family: Josefin Sans">Bolinho de Batatas Reais</h5>
+          <a href="/food2/" class="btn btn-primary textosticker">Ver Receita...</a>
+        </div>
+        </div>
+    </div>
         </div>
     </div>
   </span>
-<nav aria-label="Page navigation example">
+<nav aria-label="Page navigation example" style="margin-top: 50px;">
     <ul class="pagination">
       <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
       <li class="page-item"><a class="page-link" href="/resultados/">1</a></li>
