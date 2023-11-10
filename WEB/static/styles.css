@@ -31,6 +31,7 @@
         margin-left: 0px !important;
         margin-top: 110px;
         margin-bottom: 90px;
+
     }
 
 }
@@ -50,6 +51,12 @@
     }
 }
 
+@media only screen and (max-width: 1119px){
+    .
+
+
+}
+
 .fundoitens {
     width: auto;
     height: 700px;
@@ -58,7 +65,15 @@
     position: relative;
 }
 
-
+.background-image {
+    background-image: url(IMG/fundoitens.png);
+    background-size: 50% 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 900px;
+    width: 1400px;
+}
 .titulo {
     text-align: left;
     font-weight: bold;
@@ -233,9 +248,9 @@ p {
 }
 .titulo2 {
     font-family: Josefin Sans;
-    position: absolute;
+    
     font-size: 20pt;
-    margin-top: 9%;
+    margin-top: %;
     margin-left: 35%;
     text-align: center;
     width: 20%;
