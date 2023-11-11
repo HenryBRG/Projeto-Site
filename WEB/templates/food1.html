@@ -6,25 +6,38 @@
 {% block content %}
 <main>
     <span class="container">
-        
-        <div class="card mb-3" style="width: 500px; height: 600px">
+       <div class="d-flex justify-content-center align-items-center">
+        <div class="card mb-3" style="height: 500px; width: 450px; background-color: #fcc404;">
             <div class="card-body">
-                <img src="{{ url_for('static', filename='/IMG/stickerkirara.png')}}" alt="" class="imgdetalhes">
-        
-                    
-                <h2 class="titulo1">
-                    Refeição Revigorante Miau
-                </h2>
-                <p class="subtexto">"O prato inclui uma generosa porção de frango grelhado, que é cozido à perfeição para garantir a suculência e o sabor. Acompanhado de arroz cozido no vapor, o Refeição Revigorante Miau proporciona uma base sólida para a aventura, garantindo energia e vitalidade aos viajantes."</p>
+                <div class="row">
+                    <div class="col-md-6 mx-auto">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <img src="{{ url_for('static', filename='/IMG/stickerkirara.png')}}" alt="" class="imgdetalhes">
+                            <h2 class="titulo1" style="width: 300px;">
+                                Refeição Revigorante Miau
+                            </h2>
+                            <p class="subtexto" style="width: 270px;">
+                                "O prato inclui uma generosa porção de frango grelhado, que é cozido à perfeição para garantir a suculência e o sabor. Acompanhado de arroz cozido no vapor, o Refeição Revigorante Miau proporciona uma base sólida para a aventura, garantindo energia e vitalidade aos viajantes."
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          
-          <div class="card text-center mb-3" style="width: 18rem;">
+            </div>
+        </div>
+        
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="card text-center mb-3" style="width: 1200px; background-color: #fcc404; ">
             <div class="card-body">
-                <h1 class="titulo2">
+            <div class="row">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                <div class="col-md-6">
+
+                <div class="d-flex justify-content-center align-items-center" style="margin-bottom: 20;"><h1 class="titulo2" style="width: 300px;">
                     Ingredientes
                     </h1>
-                    
+                </div>
+                    <ul>
                         <li>
                         <p class="textoingredientes">
                         -Peitos de frango (ou tofu para uma versão vegetariana)
@@ -54,15 +67,16 @@
                         -Azeite de oliva</p>
                         </li>
                     </ul>
-            </div>
-          </div>
-          
-          <div class="card text-end" style="width: 18rem;">
-            <div class="card-body">
-                <h1 class="titulo2" style="margin-left: 54.1%;">
+                
+                
+                </div>
+                
+                
+                <div class="d-flex justify-content-center align-items-center" style="margin-bottom: 20px;"><h1 class="titulo2" style=" width: 300px;">
                     Instruções
                     </h1>
-                    <ul style="position: absolute;margin-left: 43.9%; margin-top: 200px; list-style-type: circle; width: 40%;" >
+                </div>
+                    
                         <li>
                         <p class="textoingredientes" style="margin-top: -12px;">
                         1. Cozinhe o arroz de acordo com as instruções na embalagem. Reserve.
@@ -83,8 +97,14 @@
                         6. Regue tudo com um pouco mais de molho de soja, se desejar.</p>
                         </li>
                     </ul>
+                </div>
+                        
+                    </div>
+                  </div>
+                </div>
             </div>
-          </div>
+        </div>
+        
     </span>
 </main>
 

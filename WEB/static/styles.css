@@ -3,9 +3,17 @@
     padding: 0px;
     text-decoration: none;
 }
+
+@media only screen and (max-width: 767px) {
+    .textoingredientes{
+        width: 250px !important;
+    }
+    
+}
+
 @media only screen and (max-width: 990px) {
     .navbar {
-        width: 80px!important;
+        width: 110px!important;
         height: auto!important;
     }
     .nav-item {
@@ -14,15 +22,17 @@
     .divreceitas {
         display: flex !important;
         margin-left: 15.5% !important;
-        margin-top: -90px !important
+        
+    }
+    .imagemretangulo3{
+        
     }
 
 }
  
-@media only screen and (max-width: 767px) {
-    .retangulo{
-        left: 50%;
-        transform: translateX(-50%);
+@media only screen and (min-width: 768px) and (max-width: 990px){
+    .textoingredientes{
+        width: 270px !important;
     }
 }
 
@@ -220,11 +230,10 @@ p {
     margin-top: 400px;
 }
 .imagemretangulo3{
-    position: absolute;
-    width: 60%;
-    height: 80px;
-    margin-top: -70px;
-    left: 26.2%; 
+    
+  
+    
+    
 }
 .imgstickeritem {
     width: 80%;
@@ -232,45 +241,38 @@ p {
     margin-left: 9%;
 }
 .imgdetalhes {
-    width: 20%;
-    position: absolute;
-    margin-left: 12%;
-    margin-top: 4%;
+    width: 190px;
+    
+
+    
 }
 .titulo1 {
     font-family: Josefin Sans;
-    position: absolute;
     font-size: 20pt;
-    margin-top: 23%;
-    margin-left: 12%;
     text-align: center;
     width: 20%;
 }
 .titulo2 {
     font-family: Josefin Sans;
-    
     font-size: 20pt;
-    margin-top: %;
-    margin-left: 35%;
     text-align: center;
-    width: 20%;
+    margin-top: 30px;
+    margin-bottom: px;
+   
 }
 .subtexto {
     font-family: Josefin Sans;
-    position: absolute;
     text-align: center;
-    margin-left: 13%;
     font-size: 11pt;
     width: 18%;
-    margin-top: 30%;
+ 
 }
 .textoingredientes{
 
     font-family: Josefin Sans;
-    position: relative;
+
     font-size: 12pt;
-    margin-left: 35%;
-    width: 100%;
+
 }
 .textosticker{
     margin-left: 20%;
@@ -285,6 +287,7 @@ p {
 .card-custom{
     width: 190px !important;
 }
-.carousel-custom{
+.carousel-custom {
     margin-left: -58px;
+
 }
